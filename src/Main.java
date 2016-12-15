@@ -18,15 +18,17 @@ public class Main {
 		year[5] = 313410;
 		
 		years = year.length;
+		int displayYear = 2016;
 
 		double j = 0;
 		
 		for(int i=0; i<years-1; i++){
 			double current = (double) (year[i] - year[i+1])/year[i+1];
-			System.out.println(current);
+			displayYear = displayYear-1;
+			System.out.println(displayYear+" = "+current);
 			j = j + (double) (year[i] - year[i+1])/year[i+1];
 		}
 		j=j/years;
-		System.out.println(j);
+		System.out.println("Average = "+j);
 	}
 }
